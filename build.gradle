@@ -2,6 +2,13 @@ plugins {
     id 'java'
 }
 
+test {
+    testLogging {
+        outputs.upToDateWhen { false }
+        showStandardStreams = true
+    }
+}
+
 group 'lish'
 version '1.0-SNAPSHOT'
 
